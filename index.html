@@ -317,5 +317,23 @@ alert('ثبت‌نام موفقیت‌آمیز بود! در حال انتقال 
  });
  });
 </script>
+ <script>
+document.querySelectorAll('.signup-option').forEach(option => {
+option.addEventListener('click', function() {
+document.querySelectorAll('.signup-option').forEach(opt => {
+opt.classList.remove('checked');
+opt.querySelector('input[type="checkbox"]').checked = false;
+});
+this.classList.add('checked');
+this.querySelector('input[type="checkbox"]').checked = true;
+
+setTimeout(function() {
+window.location.href = 'dashboard.html';
+}, 1500);
+
+alert('ثبت‌نام موفقیت‌آمیز بود! در حال انتقال به پنل کاربری...');
+});
+});
+</script>
 </body>
 </html>
