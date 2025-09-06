@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Pikzels - Sign Up</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ 
+ body {
+ background: linear-gradient(135deg, #6e8efb, #a777e3);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ padding: 20px;
+ }
+ 
+ .container {
+ display: flex;
+ max-width: 1000px;
+ width: 100%;
+ background: white;
+ border-radius: 20px;
+ overflow: hidden;
+ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .left-panel {
+ flex: 1;
+ background: linear-gradient(135deg, #6e8efb, #a777e3);
+ color: white;
+ padding: 40px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ }
+ 
+ .left-panel h1 {
+ font-size: 2.5rem;
+ margin-bottom: 20px;
+ }
+ 
+ .left-panel p {
+ font-size: 1.1rem;
+ line-height: 1.6;
+ margin-bottom: 30px;
+ }
+ 
+ .app-image {
+ max-width: 100%;
+ border-radius: 10px;
+ margin-top: 30px;
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .right-panel {
+ flex: 1;
+ padding: 40px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ }
+ 
+ .logo {
+ font-size: 2.2rem;
+ font-weight: bold;
+ color: #6e8efb;
+ margin-bottom: 10px;
+ text-align: center;
+ }
+ 
+ .tagline {
+ color: #777;
+ text-align: center;
+ margin-bottom: 30px;
+ }
+ 
+ .signup-options {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+ margin-bottom: 30px;
+ }
+ 
+ .signup-option {
+ display: flex;
+ align-items: center;
+ padding: 12px 20px;
+ border: 2px solid #eee;
+ border-radius: 10px;
+ cursor: pointer;
+ transition: all 0.3s;
+ }
+ 
+ .signup-option:hover {
+ border-color: #6e8efb;
+ transform: translateY(-2px);
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+ }
+ 
+ .signup-option.checked {
+ border-color: #6e8efb;
+ background-color: rgba(110, 142, 251, 0.05);
+ }
+ 
+ .signup-option i {
+ margin-right: 15px;
+ font-size: 20px;
+ width: 24px;
+ text-align: center;
+ }
+ 
+ .fa-google {
+ color: #DB4437;
+ }
+ 
+ .fa-discord {
+ color: #5865F2;
+ }
+ 
+ .fa-apple {
+ color: #000;
+ }
+ 
+ .checkbox {
+ margin-right: 15px;
+ width: 20px;
+ height: 20px;
+ accent-color: #6e8efb;
+ }
+ 
+ .trusted-by {
+ text-align: center;
+ color: #777;
+ margin: 30px 0;
+ font-size: 0.9rem;
+ }
+ 
+ .rating {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 15px 0;
+ gap: 5px;
+ }
+ 
+ .stars {
+ color: #FFD700;
+ margin-right: 10px;
+ }
+ 
+ .trustpilot {
+ font-weight: bold;
+ color: #00C67A;
+ }
+ 
+ .help-link {
+ text-align: center;
+ margin-top: 20px;
+ }
+ 
+ .help-link a {
+ color: #6e8efb;
+ text-decoration: none;
+ font-size: 0.9rem;
+ }
+ 
+ .help-link a:hover {
+ text-decoration: underline;
+ }
+ 
+ @media (max-width: 768px) {
+ .container {
+ flex-direction: column;
+ }
+ 
+ .left-panel {
+ padding: 30px 20px;
+ }
+ 
+ .right-panel {
+ padding: 30px 20px;
+ }
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <div class="left-panel">
+ <h1>Unleash Your Creativity</h1>
+ <p>Join our community of creators and design stunning visuals with our easy-to-use tools. No experience required!</p>
+ <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pikzels App" class="app-image">
+ </div>
+ 
+ <div class="right-panel">
+ <div class="logo">Pikzels</div>
+ <p class="tagline">Sign up to access the Web App & start creating.</p>
+ 
+ <div class="signup-options">
+ <div class="signup-option">
+ <input type="checkbox" class="checkbox" id="google">
+ <label for="google">
+ <i class="fab fa-google"></i>
+ Sign Up with Google
+ </label>
+ </div>
+ 
+ <div class="signup-option checked">
+ <input type="checkbox" class="checkbox" id="discord" checked>
+ <label for="discord">
+ <i class="fab fa-discord"></i>
+ Sign Up with Discord
+ </label>
+ </div>
+ 
+ <div class="signup-option">
+ <input type="checkbox" class="checkbox" id="apple">
+ <label for="apple">
+ <i class="fab fa-apple"></i>
+ Sign Up with Apple
+ </label>
+ </div>
+ </div>
+ 
+ <div class="trusted-by">
+ Trusted by 475,295 Users
+ </div>
+ 
+ <div class="rating">
+ <div class="stars">
+ <i class="fas fa-star"></i>
+ <i class="fas fa-star"></i>
+ <i class="fas fa-star"></i>
+ <i class="fas fa-star"></i>
+ <i class="fas fa-star"></i>
+ </div>
+ <span class="trustpilot">Excellent</span>
+ </div>
+ 
+ <div class="help-link">
+ <a href="#">Having trouble signing up? Click here so we can assist you.</a>
+ </div>
+ </div>
+ </div>
+
+ <script>
+ // Add interactivity to checkboxes
+ document.querySelectorAll('.signup-option').forEach(option => {
+ option.addEventListener('click', function() {
+ // Uncheck all options
+ document.querySelectorAll('.signup-option').forEach(opt => {
+ opt.classList.remove('checked');
+ opt.querySelector('input[type="checkbox"]').checked = false;
+ });
+ 
+ // Check the clicked option
+ this.classList.add('checked');
+ this.querySelector('input[type="checkbox"]').checked = true;
+ });
+ });
+ </script>
+</body>
+</html>
