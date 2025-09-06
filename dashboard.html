@@ -429,5 +429,32 @@ alert('ثبت‌نام موفقیت‌آمیز بود! در حال انتقال 
  });
  });
 </script>
+ <script> // اضافه کردن عملکرد به منوهای سایدبار document.querySelectorAll('.sidebar-menu a').forEach(menuItem => {
+ menuItem.addEventListener('click', function(e) {
+ e.preventDefault();
+ alert('این بخش در حال توسعه است: ' + this.textContent);
+ });
+ });
+
+ // اضافه کردن عملکرد به دکمه "پروژه جدید" document.querySelector('.btn-create').addEventListener('click', function(e) {
+ e.preventDefault();
+ alert('امکان ایجاد پروژه جدید - در حال توسعه');
+ });
+
+ // اضافه کردن عملکرد به کارت‌های پروژه document.querySelectorAll('.project-card').forEach(card => {
+ card.addEventListener('click', function() {
+ alert('باز کردن پروژه: ' + this.querySelector('.project-title').textContent);
+ });
+ });
+
+ // اضافه کردن عملکرد به آیکون کاربر document.querySelector('.user-avatar').addEventListener('click', function() {
+ alert('پروفایل کاربر - در حال توسعه');
+ });
+
+ // اضافه کردن عملکرد به آیکون اعلان‌ها document.querySelector('.notifications').addEventListener('click', function() {
+ alert('اعلان‌ها - در حال توسعه');
+ });
+
+ console.log('تمامی عملکردها اضافه شدند!');</script>
 </body>
 </html>
